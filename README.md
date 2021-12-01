@@ -1,14 +1,19 @@
-# WeLoveMovies-Backend
-Backend Live Preview: [click here](https://frozen-ravine-83173.herokuapp.com/movies/)
+# WeLoveMovies - Backend :clapper: :popcorn: :film_strip:
+🌟 Backend Live Preview: [click here](https://frozen-ravine-83173.herokuapp.com/movies/)
 
-Project Prompt:
+# ❗ Project Prompt
 "You've been hired on as a backend developer at a new startup called WeLoveMovies! As another developer works on the design and frontend experience, you have been tasked with setting up a database and building out specific routes so that users can gain access to data about movies, theaters, and reviews."
+
+# 💻 Tech Used
+Technologies used: 
+- Node.js
+- Express.js
+- Knex.js
+- PostgreSQL
 
 For this project, I created the database queries using Knex, designed the express architecture, and set up a staging database using ElephantSql.
 
-Technologies used: Node.js, Express.js, Knex.js, PostgreSQL.
-
-# This API server expresses the following endpoints:
+# This API Server Expresses the Following Endpoints
 
 ## /movies Route
 ### GET /movies (optional param is_showing)
