@@ -34,7 +34,7 @@ If specified as `GET /movies?is_showing=true`, the route only returns those movi
 Responds with a movie matching the corresponding movieId requested.
 
 Example: `GET /movies/1` Response:
-``
+```
 {
   "data": {
     "id": 1,
@@ -45,12 +45,12 @@ Example: `GET /movies/1` Response:
     "image_url": "https://imdb-api.com/..."
   }
 }
-``
+```
 If no movie exists, an error will be returned as the response with status code 404: `{"error": "Movie cannot be found."}`
 
 ### GET /movies/:movieId/theaters
 Responds with all theaters where the movie matching the requested movieId is playing. Example: `GET /movies/1/theaters` Response:
-``
+```
 {
   "data": [
     {
@@ -69,10 +69,10 @@ Responds with all theaters where the movie matching the requested movieId is pla
     // ...
   ]
 }
-``
+```
 ### GET /movies/:movieId/reviews
 Responds with all reviews for the movie, including all of the critic details added to the critic key of the response. Example: `GET /movies/1/reviews` Response:
-``
+```
 {
   "data": [
     {
@@ -95,11 +95,11 @@ Responds with all reviews for the movie, including all of the critic details add
     // ...
   ]
 }
-``
+```
 # /theaters Route
 ### GET /theaters
 Responds with all theaters as well as all movies playing at each theater added to the movie key. Response looks like the following:
-``
+```
 {
   "data": [
     {
@@ -131,20 +131,20 @@ Responds with all theaters as well as all movies playing at each theater added t
     // ...
   ]
 }
-``
+```
 # /reviews Route
 ## PUT /reviews/:reviewId
 Partially or fully updates a review. If the ID is incorrect a `404` will be returned.
 
 A body like the following should be passed along with the request:
-``
+```
 {
   "score": 3,
   "content": "New content..."
 }
-``
+```
 The response includes the entire review record with the newly patched content, and the critic information set to the critic property.
-``
+```
 {
   "data": {
     "review_id": 1,
@@ -164,13 +164,13 @@ The response includes the entire review record with the newly patched content, a
     }
   }
 }
-``
+```
 ### DELETE /reviews/:reviewId
 Deletes review matching reviewId. Returns status `204 No Content.`
 
 If the given ID does not match an existing review, responds with status 404 and the following:
-``
+```
 {
   "error": "Review cannot be found."
 }
-``
+```
