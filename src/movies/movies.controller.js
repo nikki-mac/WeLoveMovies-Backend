@@ -1,11 +1,10 @@
 const service = require("./movies.service");
 const asyncErrorBoundary = require("../errors/asyncErrorBoundary");
 
+//middleware
 async function movieExists(req, res, next) {
     const { movieId } = req.params;
-
     const movie = await service.read(movieId);
-
     if (movie) {
         res.locals.movie = movie;
         next();
@@ -14,7 +13,8 @@ async function movieExists(req, res, next) {
     }
 }
 
-const list = async (req, res, next) => {
+//CRUD methods
+async function list(req, res, next) {
     try {
         const { is_showing } = req.query;
         if (is_showing) {
