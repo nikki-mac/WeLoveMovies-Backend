@@ -133,7 +133,7 @@ Responds with all theaters as well as all movies playing at each theater added t
 }
 ```
 ## /reviews Route
-## PUT /reviews/:reviewId
+### PUT /reviews/:reviewId
 Partially or fully updates a review. If the ID is incorrect a `404` will be returned.
 
 A body like the following should be passed along with the request:
