@@ -10,7 +10,7 @@ Technologies used: Node.js, Express.js, Knex.js, PostgreSQL.
 
 # This API server expresses the following endpoints:
 
-# /movies Route
+## /movies Route
 ### GET /movies (optional param is_showing)
 Responds with a list of movies in the following format:
 ```
@@ -96,7 +96,7 @@ Responds with all reviews for the movie, including all of the critic details add
   ]
 }
 ```
-# /theaters Route
+## /theaters Route
 ### GET /theaters
 Responds with all theaters as well as all movies playing at each theater added to the movie key. Response looks like the following:
 ```
@@ -132,7 +132,7 @@ Responds with all theaters as well as all movies playing at each theater added t
   ]
 }
 ```
-# /reviews Route
+## /reviews Route
 ## PUT /reviews/:reviewId
 Partially or fully updates a review. If the ID is incorrect a `404` will be returned.
 
