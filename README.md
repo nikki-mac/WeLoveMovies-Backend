@@ -13,21 +13,21 @@ Technologies used: Node.js, Express.js, Knex.js, PostgreSQL.
 # /movies Route
 ### GET /movies (optional param is_showing)
 Responds with a list of movies in the following format:
-
-  {
-    "data": [
-      {
-        "id": 1,
-        "title": "Spirited Away",
-        "runtime_in_minutes": 125,
-        "rating": "PG",
-        "description": "Chihiro ...",
-        "image_url": "https://imdb-api.com/..."
-      }
-      // ...
-    ]
-  }
-
+```
+ {
+  "data": [
+    {
+      "id": 1,
+      "title": "Spirited Away",
+      "runtime_in_minutes": 125,
+      "rating": "PG",
+      "description": "Chihiro ...",
+      "image_url": "https://imdb-api.com/..."
+    }
+    // ...
+  ]
+}
+```
 If specified as `GET /movies?is_showing=true`, the route only returns those movies where the movie is currently showing in theaters.
 
 ### GET /movies/:movieId
