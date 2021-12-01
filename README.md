@@ -1,17 +1,17 @@
 # WeLoveMovies - Backend :clapper: :popcorn: :film_strip:
-🌟  Backend Live Preview: [click here](https://frozen-ravine-83173.herokuapp.com/movies/)
+:star2: Backend Live Preview: [click here](https://frozen-ravine-83173.herokuapp.com/movies/)
 
-# ❗ Project Prompt
+# :exclamation: Project Prompt
 "You've been hired on as a backend developer at a new startup called WeLoveMovies! As another developer works on the design and frontend experience, you have been tasked with setting up a database and building out specific routes so that users can gain access to data about movies, theaters, and reviews."
 
-# 💻 Tech Used
+# :computer: Tech Used
 Technologies used: 
 - Node.js
 - Express.js
 - Knex.js
 - PostgreSQL
 
-For this project, I created the database queries using Knex, designed the express architecture, and set up a staging database using ElephantSql.
+For this project, I created the database queries using Knex, designed the express architecture, and set up a staging database using ElephantSQL.
 
 # This API Server Expresses the Following Endpoints
 
@@ -36,7 +36,7 @@ Responds with a list of movies in the following format:
 If specified as `GET /movies?is_showing=true`, the route only returns those movies where the movie is currently showing in theaters.
 
 ### GET /movies/:movieId
-Responds with a movie matching the corresponding movieId requested.
+Responds with a movie matching the corresponding `movieId` requested.
 
 Example: `GET /movies/1` Response:
 ```
@@ -54,7 +54,7 @@ Example: `GET /movies/1` Response:
 If no movie exists, an error will be returned as the response with status code 404: `{"error": "Movie cannot be found."}`
 
 ### GET /movies/:movieId/theaters
-Responds with all theaters where the movie matching the requested movieId is playing. Example: `GET /movies/1/theaters` Response:
+Responds with all theaters where the movie matching the requested `movieId` is playing. Example: `GET /movies/1/theaters` Response:
 ```
 {
   "data": [
