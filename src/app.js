@@ -4,9 +4,9 @@ const express = require("express");
 const errorHandler = require("./errors/errorHandler");
 const notFound = require("./errors/notFound");
 
-const moviesRouter = require("./movies/movies.router")
-const theatersRouter = require("./theaters/theaters.router")
-const reviewsRouter = require("./reviews/reviews.router")
+const moviesRouter = require("./movies/movies.router");
+const theatersRouter = require("./theaters/theaters.router");
+const reviewsRouter = require("./reviews/reviews.router");
 
 const app = express();
 
