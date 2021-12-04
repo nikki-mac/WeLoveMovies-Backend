@@ -10,7 +10,7 @@
 - Knex.js
 - PostgreSQL
 
-For this project, I created the database queries using Knex, designed the express architecture, and set up a staging database using ElephantSQL.
+For this project, I created the database queries using Knex.js, designed the Express.js architecture, and set up a staging database using ElephantSQL.
 
 # This API Server Expresses the Following Endpoints
 
