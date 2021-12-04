@@ -1,7 +1,7 @@
 # WeLoveMovies - Backend :clapper: :popcorn: :film_strip:
 :star2: Backend Live Preview: [click here](https://frozen-ravine-83173.herokuapp.com/movies/)
 
-# :exclamation: Project Prompt
+## :exclamation: Project Prompt
 "You've been hired on as a backend developer at a new startup called WeLoveMovies! As another developer works on the design and frontend experience, you have been tasked with setting up a database and building out specific routes so that users can gain access to data about movies, theaters, and reviews."
 
 # :computer: Tech Used
